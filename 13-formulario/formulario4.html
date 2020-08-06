@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+</head>
+<body> <!--nao existe cadastro.php, eh somente um exemplo-->
+    <form action="cadastro.php" method="POST">
+
+        <fieldset>
+            <legend>informaçoes pessoais</legend>
+            nome: <br> 
+            <!--autofocus serve p quando entrar na pagina ficar com a seta direto no campo da entrada-->
+            <input type="text" name="nome" required autofocus><br>
+            senha: <br>
+            <input type="password" name="senha"><br>
+            <input type="submit" name="btn-enviar" value="enviar"><br>
+            <h1>required: quando clicado para entrar sem o campo estar prenchido eh <br>
+            exigido que prencha o campo do input
+            </h1>
+            
+
+
+        </fieldset>
+        <h2>aparendo ) escrito preencha este campo (firefox</h2>
+    </form>
+
+
+</body>
+</html>
