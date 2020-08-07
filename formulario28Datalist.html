@@ -23,10 +23,69 @@
             imagem: <br>
             <input type="file" name="imagem"> <br><br>
 
+            data:
+            <input type="date" name="data" min="2000-12-01" max="2020-12-31"> <br>
             
+            hora: 
+            <input type="time" name="hora"> <br>
+            
+            mes e ano:
+            <input type="month" name="mes-ano"><br>
+
+            semana:
+            <input type="week" name="semana"><br>
+
+            data e hora:
+            <input type="datetime-local" name="data-hora"><br><br>
+
+
+            <!--textarea eh um campo de texto
+            rows eh linhas
+            cols eh colunas
+            spellcheck eh p o corretor funcionar ou não false/true ou deixar sem colocar p funcionar
+            -->
+            mensagem: <br>
+            <textarea name="mensagem" rows="6" cols="30" spellcheck="false"></textarea><br><br>
+            
+            <button type="button">please, click on me</button><br><br>
+
+            escolha o veiculo: <br>
+            <select name="veiculo">
+
+                <!--selected eh para deixar ja selecionado a op -->
+                <optgroup label="carros">
+                    <option value="camaro"> Camaro</option>
+                    <option value="cavalo" selected>cavalo</option>
+                    <option value="fusca">Fusca</option>
+                    <option value="combi">combi</option>
+                    <option value="brasilia">brasilia</option>
+                </optgroup>
+
+                <optgroup label="motos">
+                    <option value="pop100">Pop 100</option>
+                    <option value="zig50">Zig 50</option>
+
+                </optgroup>
+            </select> <br><br>
+
+
+
+
+
             <!--hidden serve por exemplo: quando programar php e 
                 necessario passar uns parametros e eh para-->
             <input type="hidden" name="id"> <br><br>
+            
+            escolha um curso: <br>
+            <input name="cursos" list="lista-cursos">
+
+                <datalist id="lista-cursos">
+                    <option value="HTML5">
+                    <option value="CSS3">
+                    <option value="PHP">
+
+                </datalist>
+            <br><br>
 
             Url>
             <input type="url" name="ulr"> <br>
