@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+</head>
+<body> <!--nao existe cadastro.php, eh somente um exemplo-->
+    <form action="cadastro.php" method="POST">
+
+        <fieldset>
+            <legend>informaçoes pessoais</legend>
+            nome: <br> 
+            <!--maxlength eh o max de character que eh permitido que entrado do campo de entr-->
+            
+            <input type="text" name="nome" required autofocus maxlength="5"><br>
+            senha: <br>
+            <input type="password" name="senha"><br>
+            email: <br>
+            <input type="email" name="email" required><br>
+            time: <br>
+            <!--checket ja para ficar marcado a op-->
+            <input type="radio" name="time" value="brasil" checked> Brasil <br>
+            <input type="radio" name="time" value="Alemanha">Alemanha  <br>
+            <input type="radio" name="time" value="frança"> frança <br>
+            <input type="radio" name="time" value="Espanha"> Espanha <br>
+            <input type="submit" name="btn-enviar" value="enviar"><br>
+            cores: <br>
+            <!--checket ja para ficar marcado a op-->            
+            <input type="checkbox", name="cores" value="verde" checked>verde<br>
+            <input type="checkbox", name="cores" value="amarelo">amarelo<br>
+            <input type="checkbox", name="cores" value="rosa">rosa<br>
+            <input type="checkbox", name="cores" value="vermelho">vermelho<br> 
+
+            quantidade: <br>
+            <!--step serve pela quatidade dada (ex: 10) pulando o numeros por esa qtd-->
+            <input type="number" name="quantidade" min="0" max="500" step="10"><br>
+            <br>
+            <input type="range" name="quantidade"><br>
+            <input type="color" name="cor">
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
