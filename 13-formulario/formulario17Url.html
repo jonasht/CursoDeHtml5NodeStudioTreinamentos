@@ -17,7 +17,17 @@
             senha: <br>
             <input type="password" name="senha"><br>
             email: <br>
-            <input type="email" name="email" required><br>
+            <!--opcao de autocomplete p autocompletar coisas salvas no browser-->
+            <input type="email" name="email" autocomplete="off" placeholder="seuemail@aqui.com" required><br>
+            <br>
+            imagem: <br>
+            <input type="file" name="imagem"> <br><br>
+            <!--hidden serve por exemplo: quando programar php e 
+                necessario passar uns parametros e eh para-->
+            <input type="hidden" name="id"> <br><br>
+
+            Url>
+            <input type="url" name="ulr"> <br>
             time: <br>
             <!--checket ja para ficar marcado a op-->
             <input type="radio" name="time" value="brasil" checked> Brasil <br>
@@ -34,7 +44,10 @@
 
             quantidade: <br>
             <!--step serve pela quatidade dada (ex: 10) pulando o numeros por esa qtd-->
-            <input type="number" name="quantidade" min="0" max="500" step="10">
+            <input type="number" name="quantidade" min="0" max="500" step="10"><br>
+            <br>
+            <input type="range" name="quantidade"><br>
+            <input type="color" name="cor">
 
 
         </fieldset>
